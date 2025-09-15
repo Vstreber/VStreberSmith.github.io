@@ -1,0 +1,152 @@
+<html>
+
+    <head>
+        <link id="theme" rel="stylesheet" type="text/css" href="Stylesheets/day.css" />
+        <link rel="icon" type="image/x-icon" href="images/nightcat.png">
+    </head>
+
+    <body>
+
+
+        <div class="main">
+            
+            <header>&#9734; &#9733; My planner! &#9733; &#9734;</header>
+
+            <article>
+                <table style="width:80%" align="center">
+                    <tr>
+                        <th class="column-highlight" style="width:10%"></th>
+                        <th style="width:16%">Animation Integration</th>
+                        <th style="width:16%">History of Animation</th>
+                        <th style="width:16">Web Programming</th>
+                        <th style="width:16%">Intro to AI</th>
+                        <th style="width:16%">Gentle Yoga</th>
+                    </tr>
+                    <tr>
+                        <td class="column-highlight">HOMEWORK</td>
+                        <td>Watch two videos (25 minutes total). Answer questions in detail.</td>
+                        <td>N/A</td>
+                        <td>Complete HW2, prepare for presentation.</td>
+                        <td>Read prologue and chapter 0. Prepare for presentation.</td>
+                        <td>Complete weekly journal entry.</td>
+                    </tr>
+                    <tr>
+                        <td class="column-highlight"> DUE DATE</td>
+                        <td>Wednesday</td>
+                        <td>N/A</td>
+                        <td>Monday night</td>
+                        <td>Thursday</td>
+                        <td>Friday</td>
+                    </tr>
+                    <tr>
+                        <td class="column-highlight">COMPLETION STATUS</td>
+                        <td id="complete1"><button id="button1" type="button" onclick="readHide1()"> Complete</button></td>
+                        <td id="complete2"><button id="button2" type="button" onclick="readHide2()"> Complete</button></td>
+                        <td id="complete3"><button id="button3" type="button" onclick="readHide3()"> Complete</button></td>
+                        <td id="complete4"><button id="button4" type="button" onclick="readHide4()"> Complete</button></td>
+                        <td id="complete5"><button id="button5" type="button" onclick="readHide5()"> Complete</button></td>
+
+                    </tr>
+                </table>
+                <br>
+
+                <script>
+                    let x1 = true;
+                    let x2 = true;
+                    let x3 = true;
+                    let x4 = true;
+                    let x5 = true;
+                    function readHide1() {
+                        if (x1){
+                            document.getElementById("complete1").style.backgroundColor = "green";
+                            document.getElementById("button1").innerHTML = "Mark Incomplete"
+                            x1 = false;
+                        } else{
+                            document.getElementById("complete1").style.backgroundColor = "red";
+                            document.getElementById("button1").innerHTML = "Mark Complete"
+                            x1 = true;
+                        }
+                    }
+                    function readHide2() {
+                        if (x2){
+                            document.getElementById("complete2").style.backgroundColor = "green";
+                            document.getElementById("button2").innerHTML = "Mark Incomplete"
+                            x2 = false;
+                        } else{
+                            document.getElementById("complete2").style.backgroundColor = "red";
+                            document.getElementById("button2").innerHTML = "Mark Complete"
+                            x2 = true;
+                        }
+                    }
+                    function readHide3() {
+                        if (x3){
+                            document.getElementById("complete3").style.backgroundColor = "green";
+                            document.getElementById("button3").innerHTML = "Mark Incomplete"
+                            x3 = false;
+                        } else{
+                            document.getElementById("complete3").style.backgroundColor = "red";
+                            document.getElementById("button3").innerHTML = "Mark Complete"
+                            x3 = true;
+                        }
+                    }
+                    function readHide4() {
+                        if (x4){
+                            document.getElementById("complete4").style.backgroundColor = "green";
+                            document.getElementById("button4").innerHTML = "Mark Incomplete"
+                            x4 = false;
+                        } else{
+                            document.getElementById("complete4").style.backgroundColor = "red";
+                            document.getElementById("button4").innerHTML = "Mark Complete"
+                            x4 = true;
+                        }
+                    }
+                    function readHide5() {
+                        if (x5){
+                            document.getElementById("complete5").style.backgroundColor = "green";
+                            document.getElementById("button5").innerHTML = "Mark Incomplete"
+                            x5 = false;
+                        } else{
+                            document.getElementById("complete5").style.backgroundColor = "red";
+                            document.getElementById("button5").innerHTML = "Mark Complete"
+                            x5 = true;
+                        }
+                    }                   
+                </script>
+
+            </article>
+
+        </div>
+
+        <div class="left">
+            <section>
+                <nav>
+                    <div class="inner-inner-nav">
+                        <div class="inner-nav">
+                            <img id="cat" class="daycat" src="images/daycat.png" style="width:10vw;height:auto"></img>
+                            <button onclick="toggleTheme()">SWITCH THEME</button>                    
+                            <script>
+                                function toggleTheme() {
+                                    let theme = document.getElementById('theme');
+                                    let cat = document.getElementById('cat')
+                                    if (theme.getAttribute('href') == 'Stylesheets/day.css') {
+                                        theme.setAttribute('href', 'Stylesheets/night.css');
+                                        cat.setAttribute('src', 'images/nightcat.png');
+                                    } else {
+                                        theme.setAttribute('href', 'Stylesheets/day.css');
+                                        cat.setAttribute('src', 'images/daycat.png');
+                                    }
+                                }
+                            </script>
+                            <p></p>
+                        </div>
+                        <ul>
+                            <li><a href="https://moodle.smith.edu/my/" target="_blank">Moodle</a></li>
+                            <li><a href="https://mail.google.com/mail/u/0/#inbox" target ="_blank">Email</a></li>
+                            <li><a href="../hwk2.html">Back to website Start Page</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </body>
+</html>

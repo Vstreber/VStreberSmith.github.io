@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link id="theme" rel="stylesheet" type="text/css" href="light.css" />
+    </head>
+
+    <body>
+
+        <div class="main">
+            <header>
+                <p>252 Algorithms</p>
+            </header>
+
+            <article>
+
+                <h3 align="center">Schedule</h3>
+
+
+                <div style="text-align: center;">
+                    <button id="button" type="button"
+                    onclick="readHide()">
+                    Read Me!</button>
+
+                    <p id="demo"></p>
+
+                    <script>
+                        let x = true;
+                        function readHide() {
+                            if (x){
+                                document.getElementById("demo").innerHTML = "SECRET HIDDEN TEXT!"
+                                document.getElementById("button").innerHTML = "Hide"
+                                x = false;
+                            } else{
+                                document.getElementById("demo").innerHTML = " "
+                                document.getElementById("button").innerHTML = "Read Me!"
+                                x = true;
+                            }
+                        }
+                    </script>
+
+                </div>
+
+                <table style="width:80%" align="center">
+                    <tr>
+                        <th style="width:10%">Week</th>
+                        <th style="width:15%">Date</th>
+                        <th style="width:15">Lecture</th>
+                        <th style="width:45%">Topic</th>
+                        <th style="width:15%">Homework</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td> <p>Tu 9/1</p> <p>Th 9/3</p> </td>
+                        <td><a href="Lectures/lectures1_2.html">Lectures 1+2</a></td>
+                        <td><p>Introduction</p> <p>Case Study: some basic linear time algorithms.</p> <p>Iterative vs. Recursive algorithms.</p> <p>Time and space complexity.</p></td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td> <p>Tu 9/8</p> <p>Th 9/10</p> </td>
+                        <td><a href="Lectures/lecture3.html">Lecture 3</a> <a href="Lectures/lecture4.html">Lecture 4</a> </td>
+                        <td><p>Algorithm <b>Analysis:</b></p> <p>Asymptomatic Analysis: Big Oh and orders of growth.</p> <p>Worst case, best case, average case analysis.</p> </td>
+                        <td><a href="Homework/example1.html">Ex 1</a> <a href="Homework/homework1.html">Hw 1</a> </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+
+        <div class="left"
+            <section>
+                <nav>
+                    <img src="images/SmithLogo.png" alt="Smith Logo" style="width:50%;height:auto">
+                    <h2>CSC 252</h2>
+                    <p>Fall 2020</p>
+                    <p>Ileana Streanu</p>
+                    <hr>
+                    <ul>
+                        <li><a href="../hwk2.html">Back to Vivian's HW2 Main Page</a></li>
+                        <li><a href="Pages/schedule.html">Schedule</a></li>
+                        <li><a href="Pages/syllabus.html">Syllabus</a></li>
+                        <li><a href="Pages/requirements.html">Requirements</a></li>
+                        <li><a href="Pages/textbook.html">Textbook</a></li>
+                    <hr>
+                        <li><a href="Pages/howTo.html">How To</a></li>
+                        <li><a href="Pages/resources.html">Resources</a></li>
+                    </ul>
+                    
+                    <!--Couldn't find W3C code tutorial, so referenced the following website for theme switch. 
+                    https://www.geeksforgeeks.org/javascript/how-to-switch-between-multiple-css-stylesheets-using-javascript/-->
+                    <button onclick="toggleTheme()">Switch Theme</button>
+                    <script>
+                        function toggleTheme() {
+                            let theme = document.getElementById('theme');
+
+                            if (theme.getAttribute('href') == 'light.css') {
+                                theme.setAttribute('href', 'dark.css');
+                            } else {
+                                theme.setAttribute('href', 'light.css');
+                            }
+                        }
+                    </script>
+                    
+                </nav>
+            </section>
+        </div>
+    </body>
+
+</html>
