@@ -1,0 +1,84 @@
+<html>
+
+    <head>
+        <link id="theme" rel="stylesheet" type="text/css" href="Stylesheets/day.css" />
+        <link rel="icon" type="image/x-icon" href="images/nightcat.png">
+        <script src="js/hw3Creative.js"></script>
+    </head>
+
+    <body>
+
+
+        <div class="main">
+            
+            <header>&#9734; &#9733; My planner! &#9733; &#9734;</header>
+
+
+            <article>
+                <table style="width:80%" align="center">
+                    <tr>
+                        <th class="column-highlight" style="width:10%"></th>
+                        <th style="width:16%">Animation Integration</th>
+                        <th style="width:16%">History of Animation</th>
+                        <th style="width:16">Web Programming</th>
+                        <th style="width:16%">Intro to AI</th>
+                        <th style="width:16%">Gentle Yoga</th>
+                    </tr>
+                    <tr>
+                        <td class="column-highlight">HOMEWORK</td>
+                        <td>Watch two videos (25 minutes total). Answer questions in detail.</td>
+                        <td>N/A</td>
+                        <td>Complete HW2, prepare for presentation.</td>
+                        <td>Read prologue and chapter 0. Prepare for presentation.</td>
+                        <td>Complete weekly journal entry.</td>
+                    </tr>
+                    <tr>
+                        <td class="column-highlight"> DUE DATE</td>
+                        <td>Wednesday</td>
+                        <td>N/A</td>
+                        <td>Monday night</td>
+                        <td>Thursday</td>
+                        <td>Friday</td>
+                    </tr>
+                    <tr>
+                        <td class="column-highlight">COMPLETION STATUS</td>
+                        <td id="complete1"><button id="button1" type="button" onclick="readHide1()"> Complete</button></td>
+                        <td id="complete2"><button id="button2" type="button" onclick="readHide2()"> Complete</button></td>
+                        <td id="complete3"><button id="button3" type="button" onclick="readHide3()"> Complete</button></td>
+                        <td id="complete4"><button id="button4" type="button" onclick="readHide4()"> Complete</button></td>
+                        <td id="complete5"><button id="button5" type="button" onclick="readHide5()"> Complete</button></td>
+
+                    </tr>
+                </table>
+                <br>
+            
+                <button id="start" type="button" onclick="startGame()">Start Game</button>
+                <p id="gameOver"></p>
+                <button id="butterfly1" type="button" onclick="butterfly1Click()" style="visibility:hidden"><img src="images/butterfly1.webp"></img></button>
+                <button id="butterfly2" type="button" onclick="butterfly2Click()" style="visibility:hidden"><img src="images/butterfly2.webp"></img></button>
+                <button id="butterfly3" type="button" onclick="endGame()" style="visibility:hidden"><img src="images/butterfly1.webp"></img></button>
+
+            </article>
+
+        </div>
+
+        <div class="left">
+            <section>
+                <nav>
+                    <div class="inner-inner-nav">
+                        <div class="inner-nav">
+                            <img id="cat" class="daycat" src="images/daycat.png" style="width:10vw;height:auto"></img>
+                            <button onclick="toggleTheme()">SWITCH THEME</button>                    
+                            <p></p>
+                        </div>
+                        <ul>
+                            <li><a href="https://moodle.smith.edu/my/" target="_blank">Moodle</a></li>
+                            <li><a href="https://mail.google.com/mail/u/0/#inbox" target ="_blank">Email</a></li>
+                            <li><a href="../hwk3.html">Back to website Start Page</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </body>
+</html>
