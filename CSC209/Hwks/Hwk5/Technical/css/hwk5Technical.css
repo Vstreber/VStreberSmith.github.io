@@ -1,0 +1,54 @@
+body {
+    text-align:center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+canvas {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lvl1 {
+  background: #d6c7f4;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.lvl2 {
+  background: #c7cff4;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.lvl3 {
+  background: #c7ddf4;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.lvl4 {
+  background: #c7f4ee;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.lvl5 {
+  background: #c7f4d0;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.lvl6 {
+  background: #d2f4c7;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.lvl7 {
+  background: #f2f4c7;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.lvl8 {
+  background: #f4dec7;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.lvl9 {
+  background: #f4c7c7;
+  padding-top:10px;
+  padding-bottom:10px;
+}

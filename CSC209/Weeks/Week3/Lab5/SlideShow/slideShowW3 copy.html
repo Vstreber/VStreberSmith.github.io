@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link id="theme" rel="stylesheet" type="text/css" href="css/slideShow.css" />
+
+<head>
+  <script>
+    const DESCRIPTIONS = ["Fieldhouse", ""];
+    const IMAGES = ["Images/fieldhouse.jpg", ""];
+    const NRIMAGES = IMAGES.length;
+
+    const TEMPLATE = '<div class="mySlides">\
+    <div class="numbertext">NUMBER</div>\
+    <img src=PATH style="width:100%">\
+    <div class="text">TEXT</div>\
+    </div>';
+
+  </script>
+</head>
+
+<body>
+
+<h2 style="text-align:center">Slideshow Gallery</h2>
+
+<div class="container">
+</div>
+
+<script type="text/javascript" src="js/slideShow.js">
+  createSlides();
+</script>
+
+</body>
+</html>

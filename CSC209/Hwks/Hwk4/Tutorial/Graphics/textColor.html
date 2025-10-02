@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas Text fillStyle</h1>
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid grey;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+ctx.font = "50px Arial";
+ctx.fillStyle = "purple";
+ctx.fillText("Hello World",10,80);
+</script>
+<h1>HTML5 Canvas Text strokeStyle</h1>
+
+<canvas id="myCanvas2" width="300" height="150" style="border:1px solid grey;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas2 = document.getElementById("myCanvas2");
+const ctx2 = canvas2.getContext("2d");
+
+ctx2.font = "50px Arial";
+ctx2.strokeStyle = "purple";
+ctx2.strokeText("Hello World",10,80);
+</script>
+
+<h1>HTML5 Canvas Linear Gradient</h1>
+
+<canvas id="myCanvas3" width="300" height="150" style="border:1px solid grey;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const c3 = document.getElementById("myCanvas3");
+const ctx3 = c3.getContext("2d");
+
+// Create linear gradient
+const grad3=ctx3.createLinearGradient(0,0,280,0);
+grad3.addColorStop(0, "lightblue");
+grad3.addColorStop(1, "darkblue");
+
+// Fill text with gradient
+ctx3.font = "50px Arial";
+ctx3.fillStyle = grad3;
+ctx3.fillText("Hello World",10,80);
+</script>
+
+<h1>HTML5 Canvas Linear Gradient</h1>
+
+<canvas id="myCanvas4" width="300" height="150" style="border:1px solid grey;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const c4 = document.getElementById("myCanvas4");
+const ctx4 = c4.getContext("2d");
+
+// Create linear gradient
+const grad4=ctx4.createLinearGradient(0,0,280,0);
+grad4.addColorStop(0, "lightblue");
+grad4.addColorStop(1, "darkblue");
+
+// Fill outlined text with gradient
+ctx4.font = "50px Arial";
+ctx4.strokeStyle = grad4;
+ctx4.strokeText("Hello World",10,80);
+</script>
+</body>
+</html>

@@ -26,3 +26,13 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+function createSlides() {
+  let container = document.getElementsByClassName("container")
+  let str = ""
+  for (let i = 0; i < NRIMAGES; i++) {
+    str += TEMPLATE.replace("NUMBER", (i + 1) + " / " + NRIMAGES).replace("PATH",IMAGES[i]).replace("TEXT",DESCRIPTIONS[i]);
+  }
+  container.innerHTML += str;
+  
+}
