@@ -1,0 +1,24 @@
+body {
+    text-align:center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+canvas {
+    background-color: #CCE2FF;
+}
+
+.lvl1 {
+  background-image: url("/VStreberSmith.github.io/CSC209/Hwks/Hwk5/Creative/images/undersea.jpg");
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+h2 {
+  background-color: rgba(16, 35, 156, 0.429);
+}
+
+a {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.452);
+}

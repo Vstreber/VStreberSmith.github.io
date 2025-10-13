@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas - fillStyle</h1>
+
+<canvas id="myCanvas" width="200" height="125" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+ctx.fillStyle = "green";
+ctx.fillRect(10,10, 100,100);
+</script>
+
+<h1>HTML5 Canvas - strokeStyle</h1>
+
+<canvas id="myCanvas2" width="200" height="125" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas2 = document.getElementById("myCanvas2");
+const ctx2 = canvas2.getContext("2d");
+
+ctx2.strokeStyle = "blue";
+ctx2.lineWidth = 5;
+ctx2.strokeRect(10,10, 100,100);
+</script>
+
+<h1>HTML5 Canvas - fillStyle and strokeStyle</h1>
+
+<canvas id="myCanvas3" width="200" height="125" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas3 = document.getElementById("myCanvas3");
+const ctx3 = canvas3.getContext("2d");
+
+ctx3.fillStyle = "green";
+ctx3.fillRect(10,10, 100,100);
+
+ctx3.strokeStyle = "blue";
+ctx3.lineWidth = 5;
+ctx3.strokeRect(10,10, 100,100);
+</script>
+
+<h1>HTML5 Canvas - fillStyle and strokeStyle with opacity</h1>
+
+<canvas id="myCanvas4" width="200" height="125" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas4 = document.getElementById("myCanvas4");
+const ctx4 = canvas4.getContext("2d");
+
+ctx4.fillStyle = "rgb(0 255 0 / 50%)";
+ctx4.fillRect(10,10, 100,100);
+
+ctx4.strokeStyle = "rgb(0 0 255 / 50%)";
+ctx4.lineWidth = 5;
+ctx4.strokeRect(10,10, 100,100);
+</script>
+
+</body>
+</html>

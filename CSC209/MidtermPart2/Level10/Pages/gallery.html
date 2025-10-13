@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/curtainMenu.css">
+  <script> 
+    const NRPROJECTS = 3;
+    const PATHS = ["../Projects/Project1/Hwk2/hwk2.html", "../Projects/Project2/Hwk4/hwk4.html", "../../../startPage.html"];
+    const NAMES = ["Project 1", "Project 2", "Github Main Page"];
+  </script>
+</head>
+
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+
+  <div id="menu" class="overlay-content">
+  </div>
+  
+</div>
+
+<h1>Gallery</h1>
+<span style="font-size:30px;cursor:pointer" onclick="toggleMenu()">&#9776; open</span>
+
+<script src="../js/gallery.js"></script>
+<script>createMenu();</script>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas fillText()</h1>
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid grey;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+ctx.font = "50px Arial";
+ctx.fillText("Hello World",10,80);
+</script>
+
+<h1>HTML5 Canvas strokeText()</h1>
+
+<canvas id="myCanvas2" width="300" height="150" style="border:1px solid grey;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas2 = document.getElementById("myCanvas2");
+const ctx2 = canvas2.getContext("2d");
+
+ctx2.font = "50px Arial";
+ctx2.strokeText("Hello World",10,80);
+</script>
+
+<h1>HTML5 Canvas strokeText()</h1>
+
+<canvas id="myCanvas3" width="300" height="150" style="border:1px solid grey;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas3 = document.getElementById("myCanvas3");
+const ctx3 = canvas3.getContext("2d");
+
+ctx3.font = "bold italic 50px Arial";
+ctx3.strokeText("Hello World",10,80);
+</script>
+
+</body>
+</html>

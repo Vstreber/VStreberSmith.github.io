@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML5 Canvas shadowColor</h1>
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid grey">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+// Shadow
+ctx.shadowColor = "lightblue";
+ctx.shadowOffsetX = 10;
+ctx.shadowOffsetY = 10;
+
+// Filled rectangle
+ctx.fillStyle = "blue";
+ctx.fillRect(20, 20, 100, 100);
+
+// Stroked rectangle
+ctx.lineWidth = 4;
+ctx.strokeStyle = "blue";
+ctx.strokeRect(170, 20, 100, 100);
+</script>
+
+<h1>HTML5 Canvas shadowColor</h1>
+
+<canvas id="myCanvas2" width="300" height="150" style="border:1px solid grey">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas2 = document.getElementById("myCanvas2");
+const ctx2 = canvas2.getContext("2d");
+
+// Shadow
+ctx2.shadowColor = "lightblue";
+ctx2.shadowOffsetX = 5;
+ctx2.shadowOffsetY = 5;
+
+ctx2.font = "50px Arial";
+
+// Filled text
+ctx2.fillStyle = "purple";
+ctx2.fillText("Hello World",10,60);
+
+// Stroked text
+ctx2.strokeStyle = "purple";
+ctx2.strokeText("Hello World",10,120);
+</script>
+
+<h1>HTML5 Canvas shadowBlur</h1>
+
+<canvas id="myCanvas3" width="300" height="150" style="border:1px solid grey">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas3 = document.getElementById("myCanvas3");
+const ctx3 = canvas3.getContext("2d");
+
+// Shadow
+ctx3.shadowColor = "lightblue";
+ctx3.shadowBlur = 8;
+ctx3.shadowOffsetX = 10;
+ctx3.shadowOffsetY = 10;
+
+// Filled rectangle
+ctx3.fillStyle = "blue";
+ctx3.fillRect(20, 20, 100, 100);
+
+// Stroked rectangle
+ctx3.lineWidth = 4;
+ctx3.strokeStyle = "blue";
+ctx3.strokeRect(170, 20, 100, 100);
+</script>
+<h1>HTML5 Canvas shadowBlur</h1>
+
+<canvas id="myCanvas4" width="300" height="150" style="border:1px solid grey">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas4 = document.getElementById("myCanvas4");
+const ctx4 = canvas4.getContext("2d");
+
+// Shadow
+ctx4.shadowColor = "lightblue";
+ctx4.shadowBlur = 4;
+ctx4.shadowOffsetX = 5;
+ctx4.shadowOffsetY = 5;
+
+ctx4.font = "50px Arial";
+
+// Filled text
+ctx4.fillStyle = "purple";
+ctx4.fillText("Hello World",10,60);
+
+// Stroked text
+ctx4.strokeStyle = "purple";
+ctx4.strokeText("Hello World",10,120);
+</script>
+
+<h1>HTML5 Canvas shadowOffsetX</h1>
+
+<canvas id="myCanvas5" width="450" height="150" style="border:1px solid grey">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas5 = document.getElementById("myCanvas5");
+const ctx5 = canvas5.getContext("2d");
+
+// Shadowcolor
+ctx5.shadowColor = "lightblue";
+
+ctx5.fillStyle = "blue";
+
+// rectangle 1
+ctx5.shadowOffsetX = 5;
+ctx5.fillRect(20, 20, 100, 100);
+
+// rectangle 2
+ctx5.shadowOffsetX = 15;
+ctx5.fillRect(170, 20, 100, 100);
+
+// rectangle 3
+ctx5.shadowOffsetX = -10;
+ctx5.fillRect(320, 20, 100, 100);
+</script>
+
+<h1>HTML5 Canvas shadowOffsetY</h1>
+
+<canvas id="myCanvas6" width="450" height="150" style="border:1px solid grey">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas6 = document.getElementById("myCanvas6");
+const ctx6 = canvas6.getContext("2d");
+
+// Shadowcolor
+ctx6.shadowColor = "lightblue";
+
+ctx6.fillStyle = "blue";
+
+// rectangle 1
+ctx6.shadowOffsetY = 5;
+ctx6.fillRect(20, 20, 100, 100);
+
+// rectangle 2
+ctx6.shadowOffsetY = 15;
+ctx6.fillRect(170, 20, 100, 100);
+
+// rectangle 3
+ctx6.shadowOffsetY = -10;
+ctx6.fillRect(320, 20, 100, 100);
+</script>
+</body>
+</html>

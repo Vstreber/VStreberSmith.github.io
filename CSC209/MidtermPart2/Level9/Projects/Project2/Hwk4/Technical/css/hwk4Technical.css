@@ -1,0 +1,64 @@
+#myContainer {
+width: 400px;
+height: 400px;
+position: relative;
+background: yellow;
+}
+
+#myContainer2 {
+width: 400px;
+height: 400px;
+position: relative;
+background: rgb(150, 234, 223);
+}
+
+#redSq {
+width: 50px;
+height: 50px;
+position: absolute;
+background-color: red;
+}
+
+#blueSq {
+width: 50px;
+height: 50px;
+top: 350px;
+left: 350px;
+position: absolute;
+background-color: blue;
+}
+
+#greenSq {
+width: 50px;
+height: 50px;
+top: 200px;
+left: 0px;
+position: absolute;
+background-color: green;
+}
+
+#orangeSq {
+width: 50px;
+height: 50px;
+top: 100px;
+left: 100px;
+position: absolute;
+background-color: orange;
+}
+
+#purpleSq {
+width: 50px;
+height: 50px;
+top: 30px;
+left: 350px;
+position: absolute;
+background-color: purple;
+}
+
+#redSt {
+width: 50px;
+height: 50px;
+position: absolute;
+background-color: red;
+clip-path: polygon(70% 0,70% 90%,2% 35%,98% 35%,21% 90%);
+}

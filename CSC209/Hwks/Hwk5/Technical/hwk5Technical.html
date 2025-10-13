@@ -3,10 +3,12 @@
 <html>
     <head>
         <link id="theme" rel="stylesheet" type="text/css" href="css/hwk5Technical.css" />
-        
+        <script src="js/hwk5Technical.js"></script>
+        <script src="js/global.js"></script>
     </head>
 
     <body>
+        <a href="../hwk5.html">Go back to HW5 main page.</a>
         <div class="lvl1">
             <h2>LVL 1: Single point and line.</h2>
                 
@@ -21,9 +23,11 @@
                 Sorry, your browser does not support canvas.
                 </canvas>  
         </div>
-    
+        
         <div class="lvl3">
             <h2>LVL 3: Random location generator button.</h2>
+                <input type="button" id="myBtn" onclick="randomPositionLimited(3)" value="Generate Random Points">
+                <p></p>
                 <canvas id="3" width="500" height="300" style="border:1px solid #000000;">
                 Sorry, your browser does not support canvas.
                 </canvas>  
@@ -31,6 +35,8 @@
       
         <div class="lvl4">
             <h2>LVL 4: Arbitrary number of points.</h2>
+                <input type="button" id="myBtn" onclick="randomPosition(4)" value="Generate Random Points">
+                <p></p>
                 <canvas id="4" width="500" height="300" style="border:1px solid #000000;">
                 Sorry, your browser does not support canvas.
                 </canvas>      
@@ -38,6 +44,8 @@
 
         <div class="lvl5">
             <h2>LVL 5: Animate the motion of the points, with their given velocities, for a fixed number NRSTEPS of steps.</h2>
+                <input type="button" id="myBtn" onclick="randomPosAnimate(5)" value="Animate Random Points">
+                <p></p>
                 <canvas id="5" width="500" height="300" style="border:1px solid #000000;">
                 Sorry, your browser does not support canvas.
                 </canvas>      
@@ -45,6 +53,8 @@
 
         <div class="lvl6">
         <h2>LVL 6: Generalize Levels 4 and 5 to animate the motion of an arbitrary number of moving points.</h2>
+            <input type="button" id="myBtn" onclick="randomPosAnimateArbitrary(6)" value="Animate Random Points">
+            <p></p>
             <canvas id="6" width="500" height="300" style="border:1px solid #000000;">
             Sorry, your browser does not support canvas.
             </canvas>      
@@ -52,6 +62,9 @@
 
         <div class="lvl7">
         <h2>LVL 7: Add an Input field where the user can enter the desired number n of points.</h2>
+            <input type="text" id="num" name="Number of Points">
+            <input type="button" id="myBtn" onclick="randomPosAnimateSpecify(7)" value="Animate Random Points">
+            <p></p>
             <canvas id="7" width="500" height="300" style="border:1px solid #000000;">
             Sorry, your browser does not support canvas.
             </canvas>       
@@ -59,6 +72,10 @@
 
         <div class="lvl8">
         <h2>LVL 8: Add a button to reset the animation.</h2>
+            <input type="text" id="num2" name="Number of Points">
+            <input type="button" id="myBtn" onclick="randomPosAnimateSpecify2(8)" value="Animate Random Points">
+            <input type="button" id="myBtn" onclick="resetAnimate(8)" value="Reset Position">
+            <p></p>        
             <canvas id="8" width="500" height="300" style="border:1px solid #000000;">
             Sorry, your browser does not support canvas.
             </canvas>      
@@ -66,10 +83,15 @@
 
         <div class="lvl9">
         <h2>LVL 9: Add a trace toggle.</h2>
+            <input type="text" id="num3" name="Number of Points">
+            <input type="button" id="myBtn" onclick="randomPosAnimateSpecify3(9)" value="Animate Random Points">
+            <input type="button" id="myBtn" onclick="resetAnimate2(9)" value="Reset Position">
+            <input type="checkbox" id="trail" value="Trail">
+            <p></p>      
             <canvas id="9" width="500" height="300" style="border:1px solid #000000;">
             Sorry, your browser does not support canvas.
             </canvas>      
         </div>
-        <script src="hwk5Technical.js"></script>
+        <script>createCanvases()</script>
     </body>
 </html>

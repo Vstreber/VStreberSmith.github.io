@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas Draw Image</h1>
+
+<div style="display:none;">
+<img id="scream" width="220" height="277" src="download.png">
+</div>
+
+<canvas id="myCanvas" width="240" height="297" style="border:1px solid grey;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+const image = document.getElementById("scream");
+
+image.addEventListener("load", (e) => {
+  ctx.drawImage(image, 10, 10);
+});
+</script>
+
+<h1>HTML5 Canvas Draw Image</h1>
+
+<div style="display:none;">
+<img id="scream" width="220" height="277" src="pic_the_scream.jpg">
+</div>
+
+<canvas id="myCanvas2" width="240" height="297" style="border:1px solid grey;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas2 = document.getElementById("myCanvas2");
+const ctx2 = canvas2.getContext("2d");
+const image2 = document.getElementById("scream");
+
+image2.addEventListener("load", (e) => {
+  ctx2.drawImage(image2, 10, 10, 80, 80);
+});
+</script>
+<h1>HTML5 Canvas Draw Image</h1>
+
+<div style="display:none;">
+<img id="scream" width="220" height="277" src="pic_the_scream.jpg">
+</div>
+
+<canvas id="myCanvas3" width="240" height="297" style="border:1px solid grey;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas3 = document.getElementById("myCanvas3");
+const ctx3 = canvas3.getContext("2d");
+const image3 = document.getElementById("scream");
+
+image3.addEventListener("load", (e) => {
+  ctx3.drawImage(image3, 90, 130, 50, 60, 10, 10, 150, 160);
+});
+</script>
+</body>
+</html>

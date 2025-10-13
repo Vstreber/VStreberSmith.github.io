@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas - Draw a Shape</h1>
+
+<canvas id="myCanvas" width="200" height="125" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+// Create a canvas
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+// Define a new path
+ctx.beginPath();
+
+// Set start-point
+ctx.moveTo(20,20);
+
+// Set sub-points
+ctx.lineTo(100,20);
+ctx.lineTo(175,100);
+ctx.lineTo(20,100);
+
+// Set end-point
+ctx.lineTo(20,20);
+
+// Draw it
+ctx.stroke();
+</script>
+
+<h1>HTML5 Canvas - Draw a triangle</h1>
+
+<canvas id="myCanvas2" width="200" height="125" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+// Create a canvas:
+const canvas2 = document.getElementById("myCanvas2");
+const ctx2 = canvas2.getContext("2d");
+
+// Define a new path:
+ctx2.beginPath();
+
+// Define a start point
+ctx2.moveTo(100,20);
+
+// Define points
+ctx2.lineTo(180,100);
+ctx2.lineTo(20,100);
+ctx2.lineTo(100,20);
+
+// Draw it
+ctx2.stroke();
+</script>
+
+<h1>HTML5 Canvas - Draw Shapes</h1>
+
+<canvas id="myCanvas3" width="200" height="125" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+// Create a canvas:
+const canvas3 = document.getElementById("myCanvas3");
+const ctx3 = canvas3.getContext("2d");
+
+// Define a new path:
+ctx3.beginPath();
+
+// Define a rectangle
+ctx3.moveTo(20,20);
+ctx3.lineTo(180,20);
+ctx3.lineTo(180,100);
+ctx3.lineTo(20,100);
+ctx3.lineTo(20,20);
+
+// Define a triangle 
+ctx3.moveTo(100,20);
+ctx3.lineTo(180,100);
+ctx3.lineTo(20,100);
+ctx3.lineTo(100,20);
+
+// Draw it
+ctx3.strokeStyle = "red";
+ctx3.stroke();
+</script>
+
+</body>
+</html>

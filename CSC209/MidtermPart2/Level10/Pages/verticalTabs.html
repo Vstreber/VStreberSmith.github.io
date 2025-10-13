@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/verticalTabs.css">
+
+  <script>    
+    const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    const yValues = [55, 49, 44, 24, 15];
+    const barColors = ["red", "green","blue","orange","brown"];
+  </script>
+</head>
+
+<body>
+
+<h2>Cool HTML features!</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Feat1')" id="defaultOpen">Canvas Linear Gradiant</button>
+  <button class="tablinks" onclick="openCity(event, 'Feat2')">Chart.js</button>
+  <button class="tablinks" onclick="openCity(event, 'Feat3')">SVG Animation</button>
+</div>
+
+<div id="Feat1" class="tabcontent">
+  <h3>Canvas Linear Gradient</h3>
+  <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey;">
+  Sorry, your browser does not support canvas.
+  </canvas>
+</div>
+
+<div id="Feat2" class="tabcontent">
+  <h3>Chart.js</h3>
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+</div>
+
+<div id="Feat3" class="tabcontent">
+  <h3>SVG Animation</h3>
+  <p> (Animation can take a few seconds to start)</p>
+  <svg width="100%" height="100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="50" style="fill:red;">
+      <animate
+        attributeName="cx"
+        begin="0s"
+        dur="10s"
+        from="50"
+        to="100%"
+        repeatCount="indefinite" />
+    </circle>
+    Sorry, your browser does not support inline SVG.
+  </svg>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="../js/verticalTabs.js"></script>
+
+<script>
+  createCanvas();
+  createChart();
+</script>
+
+</body>
+</html> 

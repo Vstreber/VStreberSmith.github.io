@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link id="theme" rel="stylesheet" type="text/css" href="css/hwk4Technical.css" />
+    </head>
+    <body>
+        <a href="../hwk4.html"><h1>Back to HW4 Main Page</h1></a>
+        <label for="redSpeed">Red square speed</label>
+        <select id="redSpeed">
+            <option value=30>Slow</option>
+            <option value=20>Medium</option>
+            <option value=10>Fast</option>
+        </select>
+        <button id="moveRedBtn" onclick="moveRed()">Move red square</button> <br><br>  
+
+        <label for="blueSpeed">Blue square speed</label>
+        <select id="blueSpeed">
+            <option value=30>Slow</option>
+            <option value=20>Medium</option>
+            <option value=10>Fast</option>
+        </select>
+        <button id="moveBlueBtn" onclick="moveBlue()">Move blue square</button> <br><br>  
+
+
+        <button id="move" onclick="moveSquares()">Move squares</button> <br><br>  
+
+
+        <div id ="myContainer">
+            <div x=0 y=0 xendpos=350 yendpos=350 id ="redSq"></div>
+            <div x=350 y=350 xendpos=0 yendpos=0 id ="blueSq"></div>
+            <div x=200 y=0 xendpos=0 yendpos=350 id="greenSq"></div>
+            <div x=100 y=100 xendpos=350 yendpos=0 id="orangeSq"></div>
+            <div x=30 y=350 xendpos=350 yendpos=0 id="purpleSq"></div>
+        </div>
+
+        <button id="move" onclick="squareBounce()">Square bounce</button> <br><br>  
+        <div id ="myContainer2">
+            <div x=0 y=0 xendpos=350 yendpos=350 id ="redSt"></div>
+        </div>
+
+        <script src="js/animation.js"></script>
+    </body>
+</html>

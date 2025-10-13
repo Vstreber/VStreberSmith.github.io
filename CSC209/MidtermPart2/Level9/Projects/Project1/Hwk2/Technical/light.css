@@ -1,0 +1,140 @@
+
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+background-color: #19182c;
+padding: 30px;
+text-align: center;
+font-size: 35px;
+color: white;
+}
+
+/* Container for flexboxes */
+section {
+display: -webkit-flex;
+display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+-webkit-flex: 1;
+-ms-flex: 1;
+flex: 1;
+background: #ffffff;
+padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+
+/* Style the content */
+article {
+-webkit-flex: 3;
+-ms-flex: 3;
+flex: 3;
+background-color: #f1f1f1;
+padding: 10px;
+}
+
+/* Style the footer */
+footer {
+background-color: #777;
+padding: 10px;
+text-align: center;
+color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+}
+
+th {
+    background-color: rgb(255, 221, 0)
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px
+}
+
+.left {
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  padding: 20px;
+  float: right;
+  width: 80%; /* The width is 60%, by default */
+}
+
+/* This is the W3C code for a toggle button below!*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}

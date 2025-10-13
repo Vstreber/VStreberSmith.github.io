@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas - Draw a Rectangle</h1>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid black;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+ctx.fillRect(0,0,150,75);
+</script>
+
+<h1>HTML5 Canvas - Draw a Line</h1>
+
+<canvas id="myCanvas2" width="200" height="100" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+// Create a canvas
+const canvas2 = document.getElementById("myCanvas2");
+const ctx2 = canvas2.getContext("2d");
+
+// Define a new path
+ctx2.beginPath();
+
+// Set a start-point
+ctx2.moveTo(0,0);
+
+// Set an end-point
+ctx2.lineTo(200,100);
+
+// Draw it
+ctx2.stroke();
+</script>
+
+<h1>HTML5 Canvas arc() Method</h1>
+
+<canvas id="myCanvas3" width="200" height="100" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas3 = document.getElementById("myCanvas3");
+const ctx3 = canvas3.getContext("2d");
+
+ctx3.beginPath();
+ctx3.arc(95,50,40,0,2*Math.PI);
+ctx3.stroke();
+</script>
+</body>
+</html>
+

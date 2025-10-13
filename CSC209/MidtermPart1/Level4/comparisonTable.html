@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/comparisonTable.css">
+
+    <script>
+      const ROW = '<tr><td>Sample text</td><td><i class="CHECKCROSS1"></i></td><td><i class="CHECKCROSS2"></i></td></tr>';
+      //window.alert(ROW);
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+
+    <h2>Comparison Table</h2>
+
+    <p> There are two different 'link' tags needed for this table, but they both fulfill the purpose of linking CSS styles to the html, so that the 'body' section knows what to look like. </p>
+    <p> The first 'link' is accessing an online CSS file for more detailed formatting such as font and spacing. </p>
+    <p> The second 'link' is accessing the local CSS file that I've made, which impacts more general parts of the table's design, such as check color. </p>
+
+    <table id="table">
+      <tr>
+        <th style="width:50%">Name</th>
+        <th>Part 1</th>
+        <th>Part 2</th>
+      </tr>
+    </table>
+
+    <script src="js/comparisonTable.js"></script>
+    <script>addRow("fa fa-check","fa fa-remove");</script>
+
+  </body>
+</html>
