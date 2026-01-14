@@ -1,14 +1,3 @@
-/**
- * 
- * This JS file contains all functions used in the application itself.
- * This includes:
- * - activating the first tab upon login
- * - opening a tab when clicked
- * - loading notes, saving notes, creating notes, and deleting notes
- * 
- */
-
-
 /** A modified version of openTab - opens just the first tab when site loads.*/
 function activateFirstTab(filename) {
 

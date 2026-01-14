@@ -1,12 +1,26 @@
 <html>
     <head>
         <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/bg.css">
     </head>
     <body>
 
+
+        <canvas id="canvas1"></canvas>
+        <script src="../js/bg.js"></script>
+
+
+        <br></br>
+        <p><em><b>Welcome to</b></em></p>
+        <h1 style="width:30%;transform:translateX(+117%);font-size:50px"><em>StickNote!</em></h1>
+
+        <br></br>
+        <br></br>
         <form action="verify.html.php" method="POST">
-            Username: <input type="text" class="login" id="login" name="username"><br>
-            Password: <input type="text" class="login" id="login" name="password"><br>
+            Username: <br></br>
+            <input type="text" class="login" id="login" name="username"><br>
+             <br></br> Password: <br></br>
+            <input type="text" class="login" id="login" name="password"><br>
             <input type="submit" >
         </form>
 
@@ -18,12 +32,12 @@
 
                 <h1>Register a new user!</h1>
                 <div class="container">
-                    <label for="uname"><b>Username</b></label>
+                    <label for="uname"><b>Username<br></br></b></label>
                     <input type="text" placeholder="Enter Username" name="uname" required>
-
-                    <label for="psw"><b>Password</b></label>
+                    <br></br>
+                    <label for="psw"><b>Password<br></br></b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
-                        
+                    <br></br>
                     <button type="submit">Register</button>
                     <label>
                         <input type="checkbox" checked="checked" name="remember"> Remember me

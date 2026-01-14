@@ -13,6 +13,9 @@
             fclose($file);
 
             updateMinutes($_POST["time"], $_SESSION["index"], $array, "../json/users.json");
+
+            header('Location: loginPage.html.php');
+
         ?>
     </body>
 </html>

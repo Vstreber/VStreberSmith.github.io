@@ -32,8 +32,13 @@ if (in_array($username, array_column($array, 'username'))){
     fclose($file);
 
     mkdir("../html/Users/".$username);
-    mkdir("../html/Users/".$username."/Images");
-    
+    mkdir("../html/Users/".$username."/Notes");
+
+    $file = fopen("../html/Users/".$username."/Notes/notes.json", "w") or die("Unable to open file!");
+    fwrite($file, "[]");
+    fclose($file);
+
+
     echo "<h2>User successfully registered! </h2>";
     echo '<form action="../html/loginPage.html.php">
     <input type="submit" value="Back to Login" />

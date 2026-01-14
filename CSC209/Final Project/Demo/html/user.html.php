@@ -1,9 +1,6 @@
-<?php
-    session_start();
-?>
 <html>
     <head>
-        <script src="../js/timeElapsed.js"></script>
+        <script src="../js/functions.js"></script>
         <?php include('../php/reader.php'); ?>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link id="theme" rel="stylesheet" type="text/css" href="../css/textBox.css" />
@@ -16,50 +13,17 @@
         <script src="../js/bg.js"></script>
         <div class="blur">
         
-
         <!-- Start the timeLoggedIn clock. -->
         <script>timeLoggedIn("start");</script>
 
-        <!-- Increase number of times a user has logged in. -->
-        <!-- Obtaining username -->
-        <?php
-            $myfile = fopen("../json/users.json", "r") or die("Unable to open file!");
-
-            $read = fread($myfile, filesize("../json/users.json"));
-            $array = json_decode($read);
-            $array = (array)$array;
-            fclose($myfile);
-
-            $myfile = fopen("../json/users.json", "w") or die("Unable to open file!");
-
-            $currentTimes = $array[$_SESSION["index"] - 1]->loggedtimes;
-            $currentTimes -= 1;
-            $array[$_SESSION["index"] - 1]->loggedtimes = $currentTimes;
-
-            fwrite($myfile, json_encode($array));
-            fclose($myfile);
-
-            $username = $array[$_SESSION["index"] - 1]->username;
-            $_SESSION["username"] = $username;
-        ?>
-
-        <!-- Storing username from session for use in javascript. -->
-        <p id="usernameForJs" style="display:none"><?php echo $username;?></p>
+        <!-- Storing path for use in javascript. -->
         <script>     
-            let username = document.getElementById("usernameForJs").innerHTML;
-            let path = "../html/Users/" + username + "/Notes/notes.json";
+            let path = "../html/Users/user/notes.json";
         </script>
 
         <!-- Header HTML -->
-        <h2>Welcome, <?php echo $username;?> !</h2>
+        <h2>Welcome, User!</h2>
         <br></br>
-
-        <!-- Logout button -->
-        <form action="logoutPage.html.php" method="POST">
-            <input type="hidden" name="folder" value= <?php $_SESSION["username"] ?>>
-            <input type="hidden" name="time" id="timeElapsed" value="placeholder">
-            <input type="submit" onclick='timeLoggedIn("end")' value="Log Out">
-        </form>
 
         <!-- Note Tab Bar -->
         <div id="tabBar" class="tab">

@@ -2,10 +2,16 @@
     <head>
         <?php include("../../php/reader.php"); ?>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" href="../../css/bg.css">
     </head>
 
     <body>
-        <h1>Welcome to the Admin page.</h1>
+        
+   <a href="../loginPage.html.php">Log Out</a>
+
+    <h1>Welcome to the Admin page.</h1>
 
         <button type="button" onclick="loadDoc('../json/users.json')">Refresh</button>
         

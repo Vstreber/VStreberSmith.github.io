@@ -17,13 +17,10 @@
                 header("Location: user.html.php");
                 die();
             } else {
-                $_SESSION["index"] = findIndex('../json/users.json', $_SESSION["username"]) + 1;
                 echo "<h1>Login Failed</h1>";
                 echo "<p>Your username and/or password didn't match any account in database.</p>";
                 echo '<a href="loginPage.html.php" class="button">Try Again</a>';
-                echo $_SESSION["index"];
-                echo $_SESSION["username"];
-                echo $_SESSION["password"];
+
                 session_unset();
                 session_destroy();
             }
